@@ -10,7 +10,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #000; /* Dark background color */
+            color: #fff; /* Light text color */
         }
 
         header {
@@ -28,8 +29,33 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #222; /* Dark container background color */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add styles for the navigation bar */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add styles for the Lorem Ipsum content */
+        .scrollable-content {
+            height: 300px; /* Adjust the height as needed */
+            overflow: auto;
+            padding: 20px;
         }
     </style>
 </head>
@@ -37,13 +63,29 @@
     <header>
         <h1>Welcome to Renniel</h1>
     </header>
-    <div class="container">
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="project.html">Projects</a>
+    </nav>
+    <div class="container" id="home"> <!-- Added id attribute for anchor link -->
         <h2>About Me</h2>
-        <p>I am a student and I use chat gpt to make this</p>
+        <p>I am a student and I use chat GPT to make this.</p>
 
-        <h2>Contact Information</h2>
-        <p>Email: your@email.com<br>
-           Phone: (123) 456-7890</p>
+        <h2>Website Test</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente impedit amet labore optio unde quis totam nulla soluta. Iusto deserunt nostrum provident nihil ut culpa! Porro doloribus minus quae enim?</p>
+        
+        <!-- Lorem Ipsum content for scrollable section -->
+        <div class="scrollable-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <!-- Add more Lorem Ipsum content as needed -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis officia deserunt, non adipisci molestias. Perspiciatis, beatae sapiente asperiores in animi distinctio eum, modi quibusdam numquam voluptates, nihil porro expedita!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis officia deserunt, non adipisci molestias. Perspiciatis, beatae sapiente asperiores in animi distinctio eum, modi quibusdam numquam voluptates, nihil porro expedita!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis officia deserunt, non adipisci molestias. Perspiciatis, beatae sapiente asperiores in animi distinctio eum, modi quibusdam numquam voluptates, nihil porro expedita!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis officia deserunt, non adipisci molestias. Perspiciatis, beatae sapiente asperiores in animi distinctio eum, modi quibusdam numquam voluptates, nihil porro expedita!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor blanditiis officia deserunt, non adipisci molestias. Perspiciatis, beatae sapiente asperiores in animi distinctio eum, modi quibusdam numquam voluptates, nihil porro expedita!</p>
+        </div>
     </div>
 </body>
 </html>
